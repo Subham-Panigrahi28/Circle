@@ -10,13 +10,37 @@ const commentButtons = document.querySelectorAll('.stat i.fa-comment');
 const bookmarkButtons = document.querySelectorAll('.stat i.fa-bookmark');
 const joinButtons = document.querySelectorAll('.join-btn');
 const refreshBtn = document.querySelector('.refresh-btn');
-const pollBtn = document.querySelector('.post-action-btn:nth-child(2)');
-const eventBtn = document.querySelector('.post-action-btn:nth-child(3)');
+// Update selectors to target buttons by their content
+const pollBtn = document.querySelector('.post-action-btn:has(i.fa-poll)') || 
+                document.querySelector('.post-action-btn:contains("Poll")');
+const eventBtn = document.querySelector('.post-action-btn:has(i.fa-calendar-alt)') || 
+                 document.querySelector('.post-action-btn:contains("Event")');
+
+// Add event listeners after DOM content is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    // Find buttons by their text content if the initial selectors didn't work
+    const postActions = document.querySelector('.post-actions');
+    if (postActions) {
+        const buttons = Array.from(postActions.querySelectorAll('.post-action-btn'));
+        const pollButton = buttons.find(btn => btn.textContent.includes('Poll'));
+        const eventButton = buttons.find(btn => btn.textContent.includes('Event'));
+
+        if (pollButton) {
+            pollButton.addEventListener('click', showPollModal);
+        }
+        if (eventButton) {
+            eventButton.addEventListener('click', showEventModal);
+        }
+    }
+});
+
 
 // State Management
 let currentFilter = 'all';
 const posts = [];
 let stories = [];
+
+
 
 // Story Creation
 createStoryBtn.addEventListener('click', () => {
