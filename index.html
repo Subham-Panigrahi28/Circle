@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle - Your Campus Social Network</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">Circle</div>
+            <input class="search" type="text" placeholder="Search...">
+            <ul class="menu">
+                <li class="nav-item active"><a href="index.html">Feed</a></li>
+                <li class="nav-item"><a href="friends.html">Friends</a></li>
+                <li class="nav-item"><a href="channels.html">Channels</a></li>
+                <li class="nav-item"><a href="study-groups.html">Study Groups</a></li>
+                <li class="nav-item"><a href="events.html">Events</a></li>
+                <li class="nav-item"><a href="notifications.html">Notifications</a></li>
+                <li class="nav-item"><a href="settings.html">Settings</a></li>
+            </ul>
+            <div class="footer">© 2025 Circle</div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Stories Section -->
+            <div class="stories-section">
+                <div class="story-card create-story">
+                    <div class="story-add">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <p>Create Story</p>
+                </div>
+                <div class="story-card">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150" alt="User" class="story-avatar">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800" alt="Story" class="story-image">
+                    <div class="story-info">
+                        <p>Sarah Chen</p>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150" alt="User" class="story-avatar">
+                    <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=800" alt="Story" class="story-image">
+                    <div class="story-info">
+                        <p>David Kim</p>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150" alt="User" class="story-avatar">
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800" alt="Story" class="story-image">
+                    <div class="story-info">
+                        <p>Emily Johnson</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Create Post Box -->
+            <div class="create-post">
+                <div class="post-input">
+                    <img src="pic.jpg" alt="Your Profile" class="user-avatar">
+                    <input type="text" placeholder="Share something with your campus...">
+                </div>
+                <div class="post-actions">
+                    <button class="post-action-btn">
+                        <i class="fas fa-image"></i>
+                        Photo/Video
+                    </button>
+                    <button class="post-action-btn">
+                        <i class="fas fa-poll"></i>
+                        Poll
+                    </button>
+                    <button class="post-action-btn">
+                        <i class="fas fa-calendar-alt"></i>
+                        Event
+                    </button>
+                    <button class="post-btn">Post</button>
+                </div>
+            </div>
+
+            <!-- Feed Filters -->
+            <div class="feed-filters">
+                <button class="filter-btn active">All Posts</button>
+                <button class="filter-btn">Popular</button>
+                <button class="filter-btn">Following</button>
+                <button class="filter-btn">Study Groups</button>
+            </div>
+
+            <!-- Posts Feed -->
+            <div class="posts-feed">
+                <!-- Featured Post -->
+                <div class="post featured">
+                    <div class="featured-badge">
+                        <i class="fas fa-star"></i> Featured
+                    </div>
+                    <div class="post-header">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150" alt="User" class="post-avatar">
+                        <div class="post-info">
+                            <div class="post-meta">
+                                <h4>Sarah Chen</h4>
+                                <span class="verified-badge">
+                                    <i class="fas fa-check-circle"></i>
+                                </span>
+                            </div>
+                            <p>@sarahc • Computer Science • 2h ago</p>
+                        </div>
+                        <button class="more-btn"><i class="fas fa-ellipsis-h"></i></button>
+                    </div>
+                    <div class="post-content">
+                        <p>Just finished my research paper on AI Ethics! 🎉 Here's a summary of key findings...</p>
+                        <div class="post-attachment">
+                            <i class="fas fa-file-pdf"></i>
+                            <div class="attachment-info">
+                                <span>AI_Ethics_Research.pdf</span>
+                                <p>PDF Document • 2.4 MB</p>
+                            </div>
+                            <button class="download-btn">
+                                <i class="fas fa-download"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="post-stats">
+                        <div class="stat">
+                            <i class="fas fa-heart"></i>
+                            <span>256</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-comment"></i>
+                            <span>48</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-bookmark"></i>
+                            <span>32</span>
+                        </div>
+                    </div>
+                    <div class="post-comments">
+                        <div class="comment">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150" alt="User" class="comment-avatar">
+                            <div class="comment-content">
+                                <div class="comment-header">
+                                    <h5>David Kim</h5>
+                                    <span>15m ago</span>
+                                </div>
+                                <p>Amazing work! Would love to collaborate on a similar project.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Regular Post -->
+                <div class="post">
+                    <div class="post-header">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150" alt="User" class="post-avatar">
+                        <div class="post-info">
+                            <h4>Emily Johnson</h4>
+                            <p>@emilyj • Data Science • 3h ago</p>
+                        </div>
+                        <button class="more-btn"><i class="fas fa-ellipsis-h"></i></button>
+                    </div>
+                    <div class="post-content">
+                        <p>Check out our Data Science study group's latest project! 📊</p>
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800" alt="Project" class="post-image">
+                    </div>
+                    <div class="post-stats">
+                        <div class="stat">
+                            <i class="fas fa-heart"></i>
+                            <span>142</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-comment"></i>
+                            <span>23</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-bookmark"></i>
+                            <span>18</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Poll Post -->
+                <div class="post">
+                    <div class="post-header">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150" alt="User" class="post-avatar">
+                        <div class="post-info">
+                            <h4>Michael Chang</h4>
+                            <p>@michaelc • Computer Science • 4h ago</p>
+                        </div>
+                        <button class="more-btn"><i class="fas fa-ellipsis-h"></i></button>
+                    </div>
+                    <div class="post-content">
+                        <p>Which programming language should we focus on for our next workshop? 🤔</p>
+                        <div class="poll">
+                            <div class="poll-option">
+                                <div class="poll-progress" style="width: 65%"></div>
+                                <div class="poll-label">
+                                    <span>Python</span>
+                                    <span>65%</span>
+                                </div>
+                            </div>
+                            <div class="poll-option">
+                                <div class="poll-progress" style="width: 25%"></div>
+                                <div class="poll-label">
+                                    <span>JavaScript</span>
+                                    <span>25%</span>
+                                </div>
+                            </div>
+                            <div class="poll-option">
+                                <div class="poll-progress" style="width: 10%"></div>
+                                <div class="poll-label">
+                                    <span>Java</span>
+                                    <span>10%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="poll-info">156 votes • 2 hours left</p>
+                    </div>
+                    <div class="post-stats">
+                        <div class="stat">
+                            <i class="fas fa-heart"></i>
+                            <span>89</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-comment"></i>
+                            <span>34</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-share"></i>
+                            <span>12</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="right-sidebar">
+            <!-- User Profile Summary -->
+            <div class="profile-summary">
+                <div class="profile-banner"></div>
+                <div class="profile-info">
+                    <img src="pic.jpg" alt="Your Profile" class="profile-avatar">
+                    <h3>Subham Panigrahi</h3>
+                    <p>Computer Science • Year 1</p>
+                    <div class="profile-stats">
+                        <div class="stat">
+                            <span>286</span>
+                            <p>Posts</p>
+                        </div>
+                        <div class="stat">
+                            <span>132</span>
+                            <p>Friends</p>
+                        </div>
+                        <div class="stat">
+                            <span>15</span>
+                            <p>Groups</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trending Topics -->
+            <div class="section">
+                <div class="section-header">
+                    <h3>Trending Topics</h3>
+                    <button class="refresh-btn"><i class="fas fa-sync-alt"></i></button>
+                </div>
+                <div class="trending-topics">
+                    <div class="topic">
+                        <div class="topic-info">
+                            <span class="topic-category">Technology</span>
+                            <h4>#AIEthics</h4>
+                            <p>2.3k posts</p>
+                        </div>
+                        <div class="topic-trend">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>12%</span>
+                        </div>
+                    </div>
+                    <div class="topic">
+                        <div class="topic-info">
+                            <span class="topic-category">Campus</span>
+                            <h4>#SpringFest2025</h4>
+                            <p>1.8k posts</p>
+                        </div>
+                        <div class="topic-trend">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>8%</span>
+                        </div>
+                    </div>
+                    <div class="topic">
+                        <div class="topic-info">
+                            <span class="topic-category">Academic</span>
+                            <h4>#DataScience</h4>
+                            <p>956 posts</p>
+                        </div>
+                        <div class="topic-trend">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>5%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Active Study Groups -->
+            <div class="section">
+                <div class="section-header">
+                    <h3>Active Study Groups</h3>
+                    <a href="study-groups.html" class="view-all">View All</a>
+                </div>
+                <div class="study-groups">
+                    <div class="study-group">
+                        <div class="group-info">
+                            <div class="live-indicator"></div>
+                            <div>
+                                <h4>Algorithm Practice</h4>
+                                <p>12 members active</p>
+                            </div>
+                        </div>
+                        <button class="join-btn">Join</button>
+                    </div>
+                    <div class="study-group">
+                        <div class="group-info">
+                            <div class="live-indicator"></div>
+                            <div>
+                                <h4>ML Workshop</h4>
+                                <p>8 members active</p>
+                            </div>
+                        </div>
+                        <button class="join-btn">Join</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upcoming Events -->
+            <div class="section">
+                <div class="section-header">
+                    <h3>Upcoming Events</h3>
+                    <a href="events.html" class="view-all">View All</a>
+                </div>
+                <div class="events">
+                    <div class="event">
+                        <div class="event-date">
+                            <span class="day">15</span>
+                            <span class="month">MAR</span>
+                        </div>
+                        <div class="event-info">
+                            <h4>Tech Career Fair</h4>
+                            <p><i class="fas fa-map-marker-alt"></i> Main Campus</p>
+                            <p><i class="far fa-clock"></i> 10:00 AM</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="event-date">
+                            <span class="day">18</span>
+                            <span class="month">MAR</span>
+                        </div>
+                        <div class="event-info">
+                            <h4>Hackathon 2025</h4>
+                            <p><i class="fas fa-map-marker-alt"></i> Innovation Hub</p>
+                            <p><i class="far fa-clock"></i> 9:00 AM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

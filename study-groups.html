@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Groups - Circle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="study-groups.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">Circle</div>
+            <input class="search" type="text" placeholder="Search...">
+            <ul class="menu">
+                <li class="nav-item"><a href="index.html">Feed</a></li>
+                <li class="nav-item"><a href="friends.html">Friends</a></li>
+                <li class="nav-item"><a href="channels.html">Channels</a></li>
+                <li class="nav-item active"><a href="study-groups.html">Study Groups</a></li>
+                <li class="nav-item"><a href="events.html">Events</a></li>
+                <li class="nav-item"><a href="notifications.html">Notifications</a></li>
+                <li class="nav-item"><a href="settings.html">Settings</a></li>
+            </ul>
+            <div class="footer">© 2025 Circle</div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="groups-header">
+                <h1>Study Groups</h1>
+                <button class="create-group-btn">
+                    <i class="fas fa-plus"></i> Create Study Group
+                </button>
+            </div>
+
+            <div class="groups-tabs">
+                <button class="tab-btn active">My Groups</button>
+                <button class="tab-btn">Discover</button>
+                <button class="tab-btn">Upcoming Sessions</button>
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search study groups...">
+                </div>
+            </div>
+
+            <div class="groups-grid">
+                <!-- Active Study Group -->
+                <div class="group-card active-session">
+                    <div class="live-badge">LIVE NOW</div>
+                    <div class="group-header">
+                        <h3>Data Structures & Algorithms</h3>
+                        <span class="subject-tag">Computer Science</span>
+                    </div>
+                    <div class="group-info">
+                        <p class="description">Currently discussing: Binary Trees and Graph Traversal</p>
+                        <div class="members">
+                            <div class="member-avatars">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150" alt="Member">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150" alt="Member">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150" alt="Member">
+                                <span class="more-members">+4</span>
+                            </div>
+                            <span>7 members active</span>
+                        </div>
+                    </div>
+                    <div class="group-actions">
+                        <button class="join-session-btn">Join Session</button>
+                        <button class="more-btn"><i class="fas fa-ellipsis-h"></i></button>
+                    </div>
+                </div>
+
+                <!-- Regular Study Group -->
+                <div class="group-card">
+                    <div class="group-header">
+                        <h3>Machine Learning Study Circle</h3>
+                        <span class="subject-tag">AI/ML</span>
+                    </div>
+                    <div class="group-info">
+                        <p class="description">Weekly discussions on ML algorithms and implementations</p>
+                        <div class="members">
+                            <div class="member-avatars">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150" alt="Member">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150" alt="Member">
+                                <span class="more-members">+8</span>
+                            </div>
+                            <span>10 members</span>
+                        </div>
+                    </div>
+                    <div class="next-session">
+                        <i class="far fa-calendar"></i>
+                        Next session: Tomorrow, 3:00 PM
+                    </div>
+                    <div class="group-actions">
+                        <button class="schedule-btn">Schedule Session</button>
+                        <button class="more-btn"><i class="fas fa-ellipsis-h"></i></button>
+                    </div>
+                </div>
+
+                <!-- Study Group with Resources -->
+                <div class="group-card">
+                    <div class="group-header">
+                        <h3>Web Development Workshop</h3>
+                        <span class="subject-tag">Development</span>
+                    </div>
+                    <div class="group-info">
+                        <p class="description">Frontend & Backend development practice group</p>
+                        <div class="members">
+                            <div class="member-avatars">
+                                <img src="https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?w=150" alt="Member">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150" alt="Member">
+                                <span class="more-members">+6</span>
+                            </div>
+                            <span>8 members</span>
+                        </div>
+                    </div>
+                    <div class="resources">
+                        <span><i class="fas fa-book"></i> 12 Resources</span>
+                        <span><i class="fas fa-video"></i> 5 Recordings</span>
+                    </div>
+                    <div class="group-actions">
+                        <button class="view-resources-btn">View Resources</button>
+                        <button class="more-btn"><i class="fas fa-ellipsis-h"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="right-sidebar">
+            <div class="section">
+                <h3>Upcoming Sessions</h3>
+                <div class="session-list">
+                    <div class="session-item">
+                        <div class="session-time">
+                            <span class="date">MAR 15</span>
+                            <span class="time">2:00 PM</span>
+                        </div>
+                        <div class="session-info">
+                            <h4>Data Structures Review</h4>
+                            <p>Preparation for midterms</p>
+                            <span class="attendees">12 attending</span>
+                        </div>
+                    </div>
+                    <div class="session-item">
+                        <div class="session-time">
+                            <span class="date">MAR 16</span>
+                            <span class="time">4:30 PM</span>
+                        </div>
+                        <div class="session-info">
+                            <h4>Algorithm Practice</h4>
+                            <p>LeetCode problem solving</p>
+                            <span class="attendees">8 attending</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Recommended Groups</h3>
+                <div class="recommended-list">
+                    <div class="recommended-item">
+                        <div class="group-preview">
+                            <h4>System Design</h4>
+                            <p>Advanced architecture concepts</p>
+                            <span class="members">24 members</span>
+                        </div>
+                        <button class="join-btn"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <div class="recommended-item">
+                        <div class="group-preview">
+                            <h4>UI/UX Design</h4>
+                            <p>Weekly design challenges</p>
+                            <span class="members">18 members</span>
+                        </div>
+                        <button class="join-btn"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="study-groups.js"></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends - Circle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="friends.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">Circle</div>
+            <input class="search" type="text" placeholder="Search...">
+            <ul class="menu">
+                <li class="nav-item"><a href="index.html">Feed</a></li>
+                <li class="nav-item active"><a href="friends.html">Friends</a></li>
+                <li class="nav-item"><a href="channels.html">Channels</a></li>
+                <li class="nav-item"><a href="study-groups.html">Study Groups</a></li>
+                <li class="nav-item"><a href="events.html">Events</a></li>
+                <li class="nav-item"><a href="notifications.html">Notifications</a></li>
+                <li class="nav-item"><a href="settings.html">Settings</a></li>
+            </ul>
+            <div class="footer">© 2025 Circle</div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="friends-header">
+                <h1>Friends</h1>
+                <button class="add-friend-btn">
+                    <i class="fas fa-user-plus"></i> Add Friend
+                </button>
+            </div>
+
+            <div class="friends-tabs">
+                <button class="tab-btn active">All Friends</button>
+                <button class="tab-btn">Online</button>
+                <button class="tab-btn">Pending</button>
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search friends...">
+                </div>
+            </div>
+
+            <div class="friends-grid">
+                <!-- Online Friend Card -->
+                <div class="friend-card">
+                    <div class="friend-banner">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800" alt="Profile Banner">
+                    </div>
+                    <div class="friend-avatar">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150" alt="Profile">
+                        <span class="status-badge online"></span>
+                    </div>
+                    <div class="friend-content">
+                        <div class="friend-header">
+                            <h3>Sarah</h3>
+                            <span class="major-tag">Computer Science</span>
+                        </div>
+                        <p class="friend-bio">AI enthusiast | Full-stack developer</p>
+                        <div class="friend-stats">
+                            <span><i class="fas fa-users"></i> 3 mutual friends</span>
+                            <span><i class="fas fa-graduation-cap"></i> AI/ML</span>
+                        </div>
+                        <div class="friend-actions">
+                            <button class="message-btn"><i class="fas fa-comment"></i> Message</button>
+                            <button class="more-btn"><i class="fas fa-ellipsis-h"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Offline Friend Card -->
+                <div class="friend-card">
+                    <div class="friend-banner">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800" alt="Profile Banner">
+                    </div>
+                    <div class="friend-avatar">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150" alt="Profile">
+                        <span class="status-badge offline"></span>
+                    </div>
+                    <div class="friend-content">
+                        <div class="friend-header">
+                            <h3>Ajay</h3>
+                            <span class="major-tag">Data Science</span>
+                        </div>
+                        <p class="friend-bio">Machine Learning Researcher | Basketball player 🏀</p>
+                        <div class="friend-stats">
+                            <span><i class="fas fa-users"></i> 5 mutual friends</span>
+                            <span><i class="fas fa-graduation-cap"></i> CS</span>
+                        </div>
+                        <div class="friend-actions">
+                            <button class="message-btn"><i class="fas fa-comment"></i> Message</button>
+                            <button class="more-btn"><i class="fas fa-ellipsis-h"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Study Mode Friend Card -->
+                <div class="friend-card">
+                    <div class="friend-banner">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=800" alt="Profile Banner">
+                    </div>
+                    <div class="friend-avatar">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150" alt="Profile">
+                        <span class="status-badge study-mode"></span>
+                    </div>
+                    <div class="friend-content">
+                        <div class="friend-header">
+                            <h3>Emily</h3>
+                            <span class="major-tag">Software Engineering</span>
+                        </div>
+                        <p class="friend-bio">Study mode: Working on DSA assignment 📚</p>
+                        <div class="friend-stats">
+                            <span><i class="fas fa-users"></i> 8 mutual friends</span>
+                            <span><i class="fas fa-graduation-cap"></i> CS</span>
+                        </div>
+                        <div class="friend-actions">
+                            <button class="join-study-btn"><i class="fas fa-book"></i> Join Study</button>
+                            <button class="more-btn"><i class="fas fa-ellipsis-h"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="right-sidebar">
+            <div class="section">
+                <h3>Friend Suggestions</h3>
+                <div class="suggestion-list">
+                    <div class="suggestion-item">
+                        <img src="https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?w=150" alt="Profile">
+                        <div class="suggestion-info">
+                            <h4>Alex</h4>
+                            <p>4 mutual friends</p>
+                            <span class="major">Computer Engineering</span>
+                        </div>
+                        <button class="add-btn"><i class="fas fa-user-plus"></i></button>
+                    </div>
+                    <div class="suggestion-item">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150" alt="Profile">
+                        <div class="suggestion-info">
+                            <h4>Aria</h4>
+                            <p>6 mutual friends</p>
+                            <span class="major">Data Science</span>
+                        </div>
+                        <button class="add-btn"><i class="fas fa-user-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Study Buddies Online</h3>
+                <div class="online-list">
+                    <div class="online-item">
+                        <div class="online-avatar">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150" alt="Profile">
+                            <span class="status online"></span>
+                        </div>
+                        <div class="online-info">
+                            <h4>Michael</h4>
+                            <p>Working on: ML Project</p>
+                        </div>
+                        <button class="join-btn">Join</button>
+                    </div>
+                    <div class="online-item">
+                        <div class="online-avatar">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150" alt="Profile">
+                            <span class="status study-mode"></span>
+                        </div>
+                        <div class="online-info">
+                            <h4>Rachel</h4>
+                            <p>Study Group: Algorithms</p>
+                        </div>
+                        <button class="join-btn">Join</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Quick Filters</h3>
+                <div class="filter-list">
+                    <button class="filter-pill active">All</button>
+                    <button class="filter-pill">Same Major</button>
+                    <button class="filter-pill">Same Classes</button>
+                    <button class="filter-pill">Study Partners</button>
+                    <button class="filter-pill">Project Teams</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="friends.js"></script>
+</body>
+</html>

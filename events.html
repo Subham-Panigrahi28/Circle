@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Circle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="events.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">Circle</div>
+            <input class="search" type="text" placeholder="Search...">
+            <ul class="menu">
+                <li class="nav-item"><a href="index.html">Feed</a></li>
+                <li class="nav-item"><a href="friends.html">Friends</a></li>
+                <li class="nav-item"><a href="channels.html">Channels</a></li>
+                <li class="nav-item"><a href="study-groups.html">Study Groups</a></li>
+                <li class="nav-item active"><a href="events.html">Events</a></li>
+                <li class="nav-item"><a href="notifications.html">Notifications</a></li>
+                <li class="nav-item"><a href="settings.html">Settings</a></li>
+            </ul>
+            <div class="footer">© 2025 Circle</div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="events-header">
+                <h1>Events</h1>
+                <button class="create-event-btn">
+                    <i class="fas fa-plus"></i> Create Event
+                </button>
+            </div>
+
+            <div class="events-tabs">
+                <button class="tab-btn active">All Events</button>
+                <button class="tab-btn">My Events</button>
+                <button class="tab-btn">Saved</button>
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search events...">
+                </div>
+            </div>
+
+            <div class="events-grid">
+                <!-- Featured Event Card -->
+                <div class="event-card featured">
+                    <div class="event-banner">
+                        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800" alt="Tech Summit">
+                        <span class="featured-badge">Featured</span>
+                        <span class="category-badge">Tech</span>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-header">
+                            <h3>Campus Tech Workshop 2025</h3>
+                            <button class="save-btn"><i class="far fa-bookmark"></i></button>
+                        </div>
+                        <p class="event-description">Join expert and like-minded people for a day of inspiration and learning.</p>
+                        <div class="event-details">
+                            <span><i class="far fa-calendar"></i> March 25, 2025</span>
+                            <span><i class="far fa-clock"></i> 1:00 PM - 5:00 PM</span>
+                            <span><i class="fas fa-map-marker-alt"></i> VU Auditorium</span>
+                        </div>
+                        <div class="event-footer">
+                            <div class="attendees">
+                                <div class="attendee-avatars">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150" alt="Attendee">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150" alt="Attendee">
+                                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150" alt="Attendee">
+                                    <span class="more-attendees">+42</span>
+                                </div>
+                                <span>45 attending</span>
+                            </div>
+                            <button class="register-btn">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Regular Event Card -->
+                <div class="event-card">
+                    <div class="event-banner">
+                        <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=800" alt="Hackathon">
+                        <span class="category-badge">Hackathon</span>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-header">
+                            <h3>24-Hour Hackathon</h3>
+                            <button class="save-btn"><i class="far fa-bookmark"></i></button>
+                        </div>
+                        <p class="event-description">Build innovative solutions and compete for exciting prizes!</p>
+                        <div class="event-details">
+                            <span><i class="far fa-calendar"></i> April 1-2, 2025</span>
+                            <span><i class="far fa-clock"></i> 10:00 AM</span>
+                            <span><i class="fas fa-map-marker-alt"></i>Lab</span>
+                        </div>
+                        <div class="event-footer">
+                            <div class="attendees">
+                                <div class="attendee-avatars">
+                                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150" alt="Attendee">
+                                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150" alt="Attendee">
+                                    <span class="more-attendees">+18</span>
+                                </div>
+                                <span>20 attending</span>
+                            </div>
+                            <button class="register-btn">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Workshop Event Card -->
+                <div class="event-card">
+                    <div class="event-banner">
+                        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800" alt="Workshop">
+                        <span class="category-badge">Workshop</span>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-header">
+                            <h3>UI/UX Design Workshop</h3>
+                            <button class="save-btn saved"><i class="fas fa-bookmark"></i></button>
+                        </div>
+                        <p class="event-description">Learn the fundamentals of user interface and experience design.</p>
+                        <div class="event-details">
+                            <span><i class="far fa-calendar"></i> March 30, 2025</span>
+                            <span><i class="far fa-clock"></i> 2:00 PM - 5:00 PM</span>
+                            <span><i class="fas fa-map-marker-alt"></i>WTL LAB</span>
+                        </div>
+                        <div class="event-footer">
+                            <div class="attendees">
+                                <div class="attendee-avatars">
+                                    <img src="https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?w=150" alt="Attendee">
+                                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150" alt="Attendee">
+                                    <span class="more-attendees">+28</span>
+                                </div>
+                                <span>30 attending</span>
+                            </div>
+                            <button class="register-btn registered">Registered</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="right-sidebar">
+            <div class="section">
+                <h3>This Week</h3>
+                <div class="calendar">
+                    <div class="calendar-header">
+                        <span>March 2025</span>
+                        <div class="calendar-nav">
+                            <button><i class="fas fa-chevron-left"></i></button>
+                            <button><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="calendar-days">
+                        <span>Sun</span>
+                        <span>Mon</span>
+                        <span>Tue</span>
+                        <span>Wed</span>
+                        <span>Thu</span>
+                        <span>Fri</span>
+                        <span>Sat</span>
+                    </div>
+                    <div class="calendar-dates">
+                        <!-- Calendar dates would be dynamically generated -->
+                        <span class="prev-month">28</span>
+                        <span>1</span>
+                        <span>2</span>
+                        <span class="has-event">3</span>
+                        <span>4</span>
+                        <span class="has-event">5</span>
+                        <span>6</span>
+                        <!-- ... more dates ... -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Your Next Events</h3>
+                <div class="upcoming-list">
+                    <div class="upcoming-item">
+                        <div class="event-time">
+                            <span class="date">MAR 25</span>
+                            <span class="time">9:00 AM</span>
+                        </div>
+                        <div class="event-info">
+                            <h4>Campus Tech Summit</h4>
+                            <p>VU Auditorium</p>
+                            <span class="event-type">Featured Event</span>
+                        </div>
+                    </div>
+                    <div class="upcoming-item">
+                        <div class="event-time">
+                            <span class="date">MAR 30</span>
+                            <span class="time">2:00 PM</span>
+                        </div>
+                        <div class="event-info">
+                            <h4>UI/UX Workshop</h4>
+                            <p>Design Studio</p>
+                            <span class="event-type">Workshop</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Categories</h3>
+                <div class="category-list">
+                    <button class="category-pill active">All</button>
+                    <button class="category-pill">Tech</button>
+                    <button class="category-pill">Workshop</button>
+                    <button class="category-pill">Hackathon</button>
+                    <button class="category-pill">Career</button>
+                    <button class="category-pill">Social</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="events.js"></script>
+</body>
+</html>

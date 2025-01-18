@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Circle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    <div class="auth-container">
+        <!-- Left Panel -->
+        <div class="auth-panel">
+            <div class="auth-content">
+                <div class="logo">Circle</div>
+                <h1>Create Account</h1>
+                <p class="subtitle">Join your campus community today</p>
+
+                <form class="auth-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>First Name</label>
+                            <div class="input-group">
+                                <i class="fas fa-user"></i>
+                                <input type="text" placeholder="First name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name</label>
+                            <div class="input-group">
+                                <i class="fas fa-user"></i>
+                                <input type="text" placeholder="Last name" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>University Email</label>
+                        <div class="input-group">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" placeholder="your.email@university.edu" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Password</label>
+                        <div class="input-group">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="Create a password" required>
+                            <button type="button" class="toggle-password">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Major</label>
+                        <div class="input-group">
+                            <i class="fas fa-graduation-cap"></i>
+                            <select required>
+                                <option value="">Select your major</option>
+                                <option value="cs">Computer Science</option>
+                                <option value="eng">Engineering</option>
+                                <option value="bus">Business</option>
+                                <option value="arts">Arts & Humanities</option>
+                                <option value="sci">Natural Sciences</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Graduation Year</label>
+                        <div class="input-group">
+                            <i class="fas fa-calendar"></i>
+                            <select required>
+                                <option value="">Select year</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="terms-privacy">
+                        <label class="checkbox-label">
+                            <input type="checkbox" required>
+                            <span>I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="auth-button">Create Account</button>
+
+                    <div class="divider">
+                        <span>or sign up with</span>
+                    </div>
+
+                    <div class="social-buttons">
+                        <button type="button" class="social-button google">
+                            <i class="fab fa-google"></i>
+                            Google
+                        </button>
+                        <button type="button" class="social-button microsoft">
+                            <i class="fab fa-microsoft"></i>
+                            Microsoft
+                        </button>
+                    </div>
+
+                    <p class="auth-switch">
+                        Already have an account? <a href="login.html">Log in</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+
+        <!-- Right Panel -->
+        <div class="feature-panel">
+            <div class="feature-content">
+                <div class="feature-slides">
+                    <div class="feature-slide active">
+                        <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=800" alt="Study Groups">
+                        <h2>Learn Together</h2>
+                        <p>Join study groups and collaborate with classmates on projects</p>
+                    </div>
+                </div>
+                <div class="slide-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

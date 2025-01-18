@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications - Circle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="notifications.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">Circle</div>
+            <input class="search" type="text" placeholder="Search...">
+            <ul class="menu">
+                <li class="nav-item"><a href="index.html">Feed</a></li>
+                <li class="nav-item"><a href="friends.html">Friends</a></li>
+                <li class="nav-item"><a href="channels.html">Channels</a></li>
+                <li class="nav-item"><a href="study-groups.html">Study Groups</a></li>
+                <li class="nav-item"><a href="events.html">Events</a></li>
+                <li class="nav-item active">Notifications</li>
+                <li class="nav-item"><a href="settings.html">Settings</a></li>
+            </ul>
+            <div class="footer">© 2025 Circle</div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="notifications-header">
+                <h1>Notifications</h1>
+                <div class="header-actions">
+                    <button class="mark-all-btn">
+                        <i class="fas fa-check-double"></i> Mark all as read
+                    </button>
+                    <button class="filter-btn">
+                        <i class="fas fa-filter"></i> Filter
+                    </button>
+                </div>
+            </div>
+
+            <div class="notifications-tabs">
+                <button class="tab-btn active">All</button>
+                <button class="tab-btn">Unread</button>
+                <button class="tab-btn">Mentions</button>
+            </div>
+
+            <div class="notifications-list">
+                <!-- Friend Request Notification -->
+                <div class="notification-item unread">
+                    <div class="notification-avatar">
+                        <img src="https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?w=150" alt="Profile">
+                    </div>
+                    <div class="notification-content">
+                        <p><strong>Rahul Sharma</strong> sent you a friend request</p>
+                        <span class="timestamp">2 minutes ago</span>
+                        <div class="notification-actions">
+                            <button class="accept-btn">Accept</button>
+                            <button class="decline-btn">Decline</button>
+                        </div>
+                    </div>
+                    <div class="notification-options">
+                        <button class="more-btn"><i class="fas fa-ellipsis-h"></i></button>
+                    </div>
+                </div>
+
+                <!-- Study Group Notification -->
+                <div class="notification-item unread">
+                    <div class="notification-avatar">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150" alt="Profile">
+                    </div>
+                    <div class="notification-content">
+                        <p><strong>Priya</strong> invited you to join the <strong>Data Structures Study Group</strong></p>
+                        <span class="timestamp">15 minutes ago</span>
+                        <div class="notification-actions">
+                            <button class="join-btn">Join Group</button>
+                            <button class="maybe-btn">Maybe Later</button>
+                        </div>
+                    </div>
+                    <div class="notification-options">
+                        <button class="more-btn"><i class="fas fa-ellipsis-h"></i></button>
+                    </div>
+                </div>
+
+                <!-- Event Reminder -->
+                <div class="notification-item">
+                    <div class="notification-avatar event-avatar">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="notification-content">
+                        <p>Reminder: <strong>Campus Tech Workshop</strong> starts in 2 hours</p>
+                        <span class="timestamp">1 hour ago</span>
+                        <div class="notification-actions">
+                            <button class="view-btn">View Event</button>
+                        </div>
+                    </div>
+                    <div class="notification-options">
+                        <button class="more-btn"><i class="fas fa-ellipsis-h"></i></button>
+                    </div>
+                </div>
+
+                <!-- Channel Mention -->
+                <div class="notification-item">
+                    <div class="notification-avatar">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150" alt="Profile">
+                    </div>
+                    <div class="notification-content">
+                        <p><strong>Ajay</strong> mentioned you in <strong>#project-collaboration</strong></p>
+                        <div class="mention-preview">
+                            "Hey @user, could you review my code changes?"
+                        </div>
+                        <span class="timestamp">2 hours ago</span>
+                    </div>
+                    <div class="notification-options">
+                        <button class="more-btn"><i class="fas fa-ellipsis-h"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="right-sidebar">
+            <div class="section">
+                <h3>Notification Settings</h3>
+                <div class="quick-settings">
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h4>Push Notifications</h4>
+                            <p>Receive desktop alerts</p>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h4>Email Notifications</h4>
+                            <p>Get email updates</p>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h4>Sound</h4>
+                            <p>Play notification sounds</p>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Filter Notifications</h3>
+                <div class="filter-list">
+                    <button class="filter-pill active">All</button>
+                    <button class="filter-pill">Friends</button>
+                    <button class="filter-pill">Study Groups</button>
+                    <button class="filter-pill">Events</button>
+                    <button class="filter-pill">Channels</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
